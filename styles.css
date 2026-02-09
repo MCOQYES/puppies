@@ -7,6 +7,7 @@ body {
     background: #fafafa;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -17,30 +18,11 @@ header {
     font-size: 1.1rem;
 }
 
+/* Sections + fade-in animation */
 section {
     max-width: 700px;
     margin: 40px auto;
     padding: 0 20px;
-}
-
-h2 {
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.main-photo {
-    width: 100%;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.poem {
-    font-style: italic;
-    color: #444;
-    text-align: center;
-}
-
-section {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease;
@@ -51,17 +33,27 @@ section.visible {
     transform: translateY(0);
 }
 
-.map-section {
-    max-width: 800px;
-    margin: 60px auto;
+/* Titles */
+h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Main photo */
+.main-photo {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Poem styling */
+.poem {
+    font-style: italic;
+    color: #444;
     text-align: center;
 }
 
-.map {
-    width: 100%;
-    opacity: 0.9;
-}
-
+/* Map container (real map + overlay) */
 .map-background {
     position: relative;
     width: 100%;
@@ -75,6 +67,7 @@ section.visible {
     border-radius: 8px;
 }
 
+/* Animated SVG overlay */
 .map-overlay {
     position: absolute;
     top: 0;
@@ -82,4 +75,16 @@ section.visible {
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+/* (Optional) If you ever use the static SVG map */
+.map-section {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    opacity: 0.9;
 }
