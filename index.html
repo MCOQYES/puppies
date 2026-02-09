@@ -35,13 +35,31 @@
         I want to learn your world — and show you mine.</p>
     </section>
 
-    <div class="map-background">
-        <img src="assets/world-map.jpg" alt="World map">
-            <section class="map-section">
-            <img src="assets/world-map.svg" alt="Map animation" class="map">
-        </section>
-    <!-- SVG animation will go here -->
-    </div>
+<div class="map-background">
+    <img src="assets/world-map.jpg" alt="World map">
+
+    <svg class="map-overlay" viewBox="0 0 1000 500">
+        <path id="route"
+              d="M800 150 Q650 200 500 230 T300 260"
+              fill="none"
+              stroke="#ff4d4d"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-dasharray="1000"
+              stroke-dashoffset="1000">
+            <animate attributeName="stroke-dashoffset"
+                     from="1000" to="0"
+                     dur="3s"
+                     fill="freeze"
+                     begin="0.5s"/>
+        </path>
+
+        <circle cx="800" cy="150" r="8" fill="#ff4d4d"/>
+        <circle cx="500" cy="230" r="8" fill="#ff4d4d"/>
+        <circle cx="300" cy="260" r="8" fill="#ff4d4d"/>
+    </svg>
+</div>
+
 
     <section>
         <h2>Where Our Worlds Meet</h2>
