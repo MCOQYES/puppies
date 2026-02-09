@@ -62,4 +62,18 @@ section.visible {
     opacity: 0.9;
 }
 
+.map-background {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.map-background img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+
 
