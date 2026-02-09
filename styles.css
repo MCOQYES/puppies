@@ -51,3 +51,15 @@ section.visible {
     transform: translateY(0);
 }
 
+.map-section {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.map {
+    width: 100%;
+    opacity: 0.9;
+}
+
+
