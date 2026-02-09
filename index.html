@@ -37,27 +37,44 @@
 
 <div class="map-background">
     <img src="assets/world-map.jpg" alt="World map">
+<svg class="map-overlay" viewBox="0 0 1000 500">
 
-    <svg class="map-overlay" viewBox="0 0 1000 500">
-        <path id="route"
-              d="M800 150 Q650 200 500 230 T300 260"
-              fill="none"
-              stroke="#ff4d4d"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-dasharray="1000"
-              stroke-dashoffset="1000">
-            <animate attributeName="stroke-dashoffset"
-                     from="1000" to="0"
-                     dur="3s"
-                     fill="freeze"
-                     begin="0.5s"/>
-        </path>
+    <!-- Mongolia → Madrid -->
+    <path d="M771 162 Q650 150 489 191"
+          fill="none"
+          stroke="#ff4d4d"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-dasharray="1000"
+          stroke-dashoffset="1000">
+        <animate attributeName="stroke-dashoffset"
+                 from="1000" to="0"
+                 dur="2.5s"
+                 fill="freeze"
+                 begin="0.5s"/>
+    </path>
 
-        <circle cx="800" cy="150" r="8" fill="#ff4d4d"/>
-        <circle cx="500" cy="230" r="8" fill="#ff4d4d"/>
-        <circle cx="300" cy="260" r="8" fill="#ff4d4d"/>
-    </svg>
+    <!-- Colombia → Madrid -->
+    <path d="M286 285 Q380 240 489 191"
+          fill="none"
+          stroke="#ff4d4d"
+          stroke-width="4"
+          stroke-linecap="round"
+          stroke-dasharray="1000"
+          stroke-dashoffset="1000">
+        <animate attributeName="stroke-dashoffset"
+                 from="1000" to="0"
+                 dur="2.5s"
+                 fill="freeze"
+                 begin="0.5s"/>
+    </path>
+
+    <!-- Points -->
+    <circle cx="771" cy="162" r="8" fill="#ff4d4d"/>   <!-- Mongolia -->
+    <circle cx="286" cy="285" r="8" fill="#ff4d4d"/>   <!-- Colombia (Pasto) -->
+    <circle cx="489" cy="191" r="10" fill="#ff4d4d"/>  <!-- Madrid -->
+</svg>
+
 </div>
 
 
