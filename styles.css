@@ -5,12 +5,15 @@ body {
     line-height: 1.6;
     color: #222;
 
+    /* Hearts texture + Valentine gradient */
     background:
         url("https://www.transparenttextures.com/patterns/hearts.png"),
         radial-gradient(circle at center, #fff0f5 0%, #ffd6e5 40%, #ffb8cf 70%, #f7a3be 100%);
 
-    background-size: 300px 300px, cover;
+    /* Make hearts visible */
+    background-size: 1200px 1200px, cover;
 }
+
 
 /* Header */
 header {
