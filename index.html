@@ -6,61 +6,65 @@
     <title>Uuree & Marlon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
         <h1>Uuree & Marlon</h1>
         <p class="subtitle">Two worlds. One meeting point.</p>
-        <!--Two worlds. One meeting point.</b>-->
     </header>
+
     <section>
         <h2>Intro</h2>
-        Hi Uuree,<br>
-        I made this small space for us — simple, quiet, and honest.<br>
-        We come from opposite sides of the world: you from <b>Mongolia</b>, me from <b>Colombia</b>.<br>
-        And somehow, our paths crossed in Madrid.
+        <p>
+            Hi Uuree,<br>
+            I made this small space for us — simple, quiet, and honest.<br>
+            We come from opposite sides of the world: you from <b>Mongolia</b>, me from <b>Colombia</b>.<br>
+            And somehow, our paths crossed in Madrid.
+        </p>
     </section>
+
     <div class="map-background">
-    <img src="assets/world-map.jpg" alt="World map">
-<svg class="map-overlay" viewBox="0 0 1000 500">
+        <img src="assets/world-map.jpg" alt="World map">
 
-    <!-- Mongolia → Madrid -->
-    <path d="M771 162 Q650 150 489 191"
-          fill="none"
-          stroke="#ff4d4d"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-dasharray="1000"
-          stroke-dashoffset="1000">
-        <animate attributeName="stroke-dashoffset"
-                 from="1000" to="0"
-                 dur="2.5s"
-                 fill="freeze"
-                 begin="0.5s"/>
-    </path>
+        <svg class="map-overlay" viewBox="0 0 1000 500">
 
-    <!-- Colombia → Madrid -->
-    <path d="M286 285 Q380 240 489 191"
-          fill="none"
-          stroke="#ff4d4d"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-dasharray="1000"
-          stroke-dashoffset="1000">
-        <animate attributeName="stroke-dashoffset"
-                 from="1000" to="0"
-                 dur="2.5s"
-                 fill="freeze"
-                 begin="0.5s"/>
-    </path>
+            <!-- Mongolia → Madrid -->
+            <path d="M771 162 Q650 150 489 191"
+                fill="none"
+                stroke="#ff4d4d"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-dasharray="1000"
+                stroke-dashoffset="1000">
+                <animate attributeName="stroke-dashoffset"
+                        from="1000" to="0"
+                        dur="2.5s"
+                        fill="freeze"
+                        begin="0.5s"/>
+            </path>
 
-    <!-- Points -->
-    <circle cx="771" cy="162" r="8" fill="#ff4d4d"/>   <!-- Mongolia -->
-    <circle cx="286" cy="285" r="8" fill="#ff4d4d"/>   <!-- Colombia (Pasto) -->
-    <circle cx="489" cy="191" r="10" fill="#ff4d4d"/>  <!-- Madrid -->
-</svg>
+            <!-- Colombia → Madrid -->
+            <path d="M286 285 Q380 240 489 191"
+                fill="none"
+                stroke="#ff4d4d"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-dasharray="1000"
+                stroke-dashoffset="1000">
+                <animate attributeName="stroke-dashoffset"
+                        from="1000" to="0"
+                        dur="2.5s"
+                        fill="freeze"
+                        begin="0.5s"/>
+            </path>
 
-</div>
-
+            <!-- Points -->
+            <circle cx="771" cy="162" r="8" fill="#ff4d4d"/>
+            <circle cx="286" cy="285" r="8" fill="#ff4d4d"/>
+            <circle cx="489" cy="191" r="10" fill="#ff4d4d"/>
+        </svg>
+    </div>
 
     <section>
         <h2>What I Feel for You</h2>
@@ -74,8 +78,6 @@
         <p>I dream of simple things: walking beside you, sharing a meal, hearing your laugh without a screen in between.<br>
         I want to learn your world — and show you mine.</p>
     </section>
-
-
 
     <section>
         <h2>Where Our Worlds Meet</h2>
@@ -113,7 +115,7 @@
         </p>
     </section>
 
-<script src="script.js"></script>
-   
+    <script src="script.js"></script>
+
 </body>
 </html>
