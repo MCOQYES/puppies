@@ -1,3 +1,17 @@
+html {
+    background: radial-gradient(circle at center, #ffe6ea 0%, #ffd1d9 40%, #f8bfc9 70%, #e8a7b4 100%);
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #222;
+    position: relative; /* important */
+    z-index: 1;         /* content stays above texture */
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -8,16 +22,7 @@ body::before {
     background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
     opacity: 0.15;
     pointer-events: none;
-    z-index: -1;
-}
-
-body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #222;
-    background: radial-gradient(circle at center, #ffe6ea 0%, #ffd1d9 40%, #f8bfc9 70%, #e8a7b4 100%); 
+    z-index: 0; /* changed from -1 */
 }
 
 /* Header */
