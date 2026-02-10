@@ -110,8 +110,8 @@ p {
     position: relative;
 
     /* REDUCCIÓN REAL DEL MAPA */
-    width: 75%;              /* antes 85% */
-    max-width: 675px;        /* 900 * 0.75 */
+    width: 80%;              /* antes 75% */
+    max-width: 720px;        /* 900 * 0.80 */
 
     margin: 0 auto 15px;
     padding: 0;
@@ -119,7 +119,7 @@ p {
 
 .map-background img {
     width: 100%;             /* se adapta al nuevo tamaño */
-    max-width: 675px;        /* asegura el límite real */
+    max-width: 720px;        /* asegura el límite real */
     height: auto;
     display: block;
     border-radius: 8px;
