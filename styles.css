@@ -19,8 +19,8 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-/* ====== FIX ESPACIOS (margin collapsing) ====== */
-section, header {
+/* ====== FIX ESPACIOS ====== */
+section, header, .map-background {
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -59,15 +59,15 @@ section {
     margin: 20px auto;
     padding: 0 15px;
 
-    /* ANIMACIÓN SIN ESPACIOS */
+    /* ANIMACIÓN SIN SALTOS */
     opacity: 0;
-    transform: translateY(0); /* <-- antes 10px */
+    transform: translateY(0);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 section.visible {
     opacity: 1;
-    transform: none; /* <-- evita el salto */
+    transform: none;
 }
 
 /* ====== TITLES ====== */
