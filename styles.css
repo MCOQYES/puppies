@@ -1,10 +1,11 @@
+/* ====== GLOBAL ====== */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #222;
-
+    color: #3a0a16; /* más contraste */
+    
     background:
         url("./assets/corazon.png"),
         radial-gradient(circle at center, #fff0f5 0%, #ffd6e5 40%, #ffb8cf 70%, #f7a3be 100%);
@@ -12,24 +13,37 @@ body {
     background-blend-mode: soft-light;
 }
 
+/* ====== RESET DE ESPACIOS ====== */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
 
-/* Header */
+/* ====== HEADER ====== */
 header {
     text-align: center;
-    padding: 20px 10px; /* was 60px */
+    padding: 25px 10px; /* equilibrado */
 }
 
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2a0010;
+    text-shadow: 0 2px 4px rgba(255,255,255,0.7);
+}
 
 .subtitle {
-    color: #666;
-    font-size: 1.1rem;
+    color: #5a2a3a;
+    font-size: 1.15rem;
+    margin-top: 6px;
+    text-shadow: 0 1px 3px rgba(255,255,255,0.6);
 }
 
-/* Sections + fade-in animation */
+/* ====== SECTIONS ====== */
 section {
     max-width: 700px;
-    margin: 10px auto;
-    padding: 0 10px;
+    margin: 20px auto; /* elimina espacios raros */
+    padding: 0 15px;
     opacity: 0;
     transform: translateY(10px);
     transition: all 0.6s ease;
@@ -40,32 +54,44 @@ section.visible {
     transform: translateY(0);
 }
 
-/* Titles */
+/* ====== TITLES ====== */
 h2 {
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #2a0010;
+    text-shadow: 0 1px 3px rgba(255,255,255,0.7);
 }
 
-/* Main photo */
+/* ====== PARAGRAPH ====== */
+p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #3a0a16;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+    margin-bottom: 14px;
+}
+
+/* ====== MAIN PHOTO ====== */
 .main-photo {
     width: 100%;
     border-radius: 8px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
-/* Poem styling */
+/* ====== POEM ====== */
 .poem {
     font-style: italic;
-    color: #444;
+    color: #4a1a2a;
     text-align: center;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.6);
 }
 
-/* Map container (real map + overlay) */
+/* ====== MAP ====== */
 .map-background {
     position: relative;
     width: 100%;
     max-width: 900px;
-    margin: 10px auto;
+    margin: 25px auto; /* elimina espacio raro */
 }
 
 .map-background img {
@@ -74,7 +100,6 @@ h2 {
     border-radius: 8px;
 }
 
-/* Animated SVG overlay */
 .map-overlay {
     position: absolute;
     top: 0;
@@ -84,10 +109,10 @@ h2 {
     pointer-events: none;
 }
 
-/* (Optional) If you ever use the static SVG map */
+/* ====== STATIC MAP (si lo usas) ====== */
 .map-section {
     max-width: 800px;
-    margin: 60px auto;
+    margin: 40px auto;
     text-align: center;
 }
 
