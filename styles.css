@@ -107,7 +107,8 @@ p {
     position: relative;
     width: 100%;
     max-width: 900px;
-    margin: 25px auto;
+    margin: 10px auto;
+    margin-top: 0;
 }
 
 .map-background img {
