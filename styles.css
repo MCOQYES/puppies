@@ -1,3 +1,4 @@
+
 /* ====== GLOBAL ====== */
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -103,18 +104,20 @@ p {
 }
 
 /* ====== MAP ====== */
+
 .map-background {
-    transform: scale(0.85); 
-    transform-origin: top center;
     position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 10px auto;
-    margin-top: 0;
+
+    /* REDUCCIÓN REAL DEL MAPA */
+    width: 85%;              /* antes 100% */
+    max-width: 765px;        /* 900 * 0.85 */
+
+    margin: 0 auto 15px;
+    padding: 0;
 }
 
 .map-background img {
-    width: 100%;
+    width: 100%;             /* se adapta al nuevo tamaño */
     display: block;
     border-radius: 8px;
 }
@@ -123,7 +126,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;             /* coincide con el nuevo tamaño */
     height: 100%;
     pointer-events: none;
 }
