@@ -6,13 +6,11 @@ body {
     color: #222;
 
     background:
-        url("https://www.transparenttextures.com/patterns/asfalt-light.png"),
-        radial-gradient(circle at center, #ffe6ea 0%, #ffd1d9 40%, #f8bfc9 70%, #e8a7b4 100%);
+        url("https://www.transparenttextures.com/patterns/hearts.png"),
+        radial-gradient(circle at center, #fff0f5 0%, #ffd6e5 40%, #ffb8cf 70%, #f7a3be 100%);
 
-    background-size: 400px 400px, cover;
+    background-size: 300px 300px, cover;
 }
-
-
 
 /* Header */
 header {
