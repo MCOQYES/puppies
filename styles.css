@@ -105,19 +105,21 @@ p {
 
 /* ====== MAP ====== */
 
+/* ====== MAP ====== */
 .map-background {
     position: relative;
 
-    width: 85%;
-    max-width: 765px;
+    /* REDUCCIÓN REAL DEL MAPA */
+    width: 75%;              /* antes 85% */
+    max-width: 675px;        /* 900 * 0.75 */
 
     margin: 0 auto 15px;
     padding: 0;
 }
 
 .map-background img {
-    width: 100%;
-    max-width: 765px;   /* fuerza el límite real */
+    width: 100%;             /* se adapta al nuevo tamaño */
+    max-width: 675px;        /* asegura el límite real */
     height: auto;
     display: block;
     border-radius: 8px;
