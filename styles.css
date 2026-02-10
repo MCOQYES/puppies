@@ -9,10 +9,9 @@ body {
     line-height: 1.6;
     color: #222;
     position: relative;
-    z-index: 1; /* content stays above texture */
+    z-index: 1;
 }
 
-/* TEXTURE FIX */
 body::before {
     content: "";
     position: fixed;
@@ -20,11 +19,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-    background-size: 300px 300px; /* makes texture more visible */
-    opacity: 0.35; /* stronger so you can SEE it */
+    background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+    background-size: 300px 300px;
+    opacity: 0.35;
     pointer-events: none;
-    z-index: 0; /* sits above gradient */
+    z-index: 0;
 }
 
 
