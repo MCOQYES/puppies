@@ -7,7 +7,7 @@ body {
 
     background:
         url("https://www.transparenttextures.com/patterns/asfalt-light.png"),
-        radial-gradient(circle at center, #ffe6ea 0%, #ffd1d9 40%, #f8bfc9 70%, #e8a7b4 100%);
+
 
     background-size: 400px 400px, cover;
 }
