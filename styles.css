@@ -6,7 +6,7 @@ body {
     color: #222;
 
     background:
-        url("./assets/corazon.jpg"),
+        url("./assets/corazon.png"),
         radial-gradient(circle at center, #fff0f5 0%, #ffd6e5 40%, #ffb8cf 70%, #f7a3be 100%);
     background-size: 500px 500px, cover;
 }
