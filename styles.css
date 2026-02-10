@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #3a0a16; /* más contraste */
+    color: #3a0a16;
     
     background:
         url("./assets/corazon.png"),
@@ -13,7 +13,21 @@ body {
     background-blend-mode: soft-light;
 }
 
-/* ====== RESET DE ESPACIOS ====== */
+/* ====== FIX ESPACIOS ====== */
+section, header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+section > *:first-child {
+    margin-top: 0;
+}
+
+section > *:last-child {
+    margin-bottom: 0;
+}
+
+/* ====== RESET ====== */
 h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -22,7 +36,7 @@ h1, h2, h3, p {
 /* ====== HEADER ====== */
 header {
     text-align: center;
-    padding: 25px 10px; /* equilibrado */
+    padding: 25px 10px;
 }
 
 header h1 {
@@ -42,7 +56,7 @@ header h1 {
 /* ====== SECTIONS ====== */
 section {
     max-width: 700px;
-    margin: 20px auto; /* elimina espacios raros */
+    margin: 20px auto;
     padding: 0 15px;
     opacity: 0;
     transform: translateY(10px);
@@ -91,7 +105,7 @@ p {
     position: relative;
     width: 100%;
     max-width: 900px;
-    margin: 25px auto; /* elimina espacio raro */
+    margin: 25px auto;
 }
 
 .map-background img {
@@ -109,7 +123,6 @@ p {
     pointer-events: none;
 }
 
-/* ====== STATIC MAP (si lo usas) ====== */
 .map-section {
     max-width: 800px;
     margin: 40px auto;
