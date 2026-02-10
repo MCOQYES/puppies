@@ -104,6 +104,8 @@ p {
 
 /* ====== MAP ====== */
 .map-background {
+    transform: scale(0.85); 
+    transform-origin: top center;
     position: relative;
     width: 100%;
     max-width: 900px;
