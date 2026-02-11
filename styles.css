@@ -170,21 +170,22 @@ p {
 }
 
 .floating-dream {
-    position: fixed;
-    bottom: 20px;
+    position: absolute;        /* ahora sigue el scroll */
+    top: 120px;                /* ajusta según dónde quieras que empiece */
     right: 20px;
-    width: 180px; /* ajustable */
-    z-index: 10;
-    animation: floaty 12s ease-in-out infinite;
-    opacity: 0.95; /* suave, no agresivo */
+    width: 180px;              /* ajustable */
+    opacity: 0.85;             /* integración suave con el fondo */
+    animation: floaty 14s ease-in-out infinite;
+    pointer-events: none;      /* no molesta al hacer clic en nada */
 }
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
-    25%  { transform: translate(-10px, -20px) scale(1.03); }
-    50%  { transform: translate(-20px, 0) scale(1); }
-    75%  { transform: translate(-10px, 20px) scale(1.03); }
+    25%  { transform: translate(-8px, -15px) scale(1.03); }
+    50%  { transform: translate(-15px, 0) scale(1); }
+    75%  { transform: translate(-8px, 15px) scale(1.03); }
     100% { transform: translate(0, 0) scale(1); }
 }
+
 
 
