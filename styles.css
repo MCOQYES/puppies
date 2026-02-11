@@ -170,14 +170,19 @@ p {
 }
 
 .floating-dream {
-    position: absolute;        /* ahora sigue el scroll */
-    top: 120px;                /* ajusta según dónde quieras que empiece */
+    position: absolute;
+    top: 120px;
     right: 20px;
-    width: 180px;              /* ajustable */
-    opacity: 0.85;             /* integración suave con el fondo */
+    width: 180px;
+    opacity: 0.85;
     animation: floaty 14s ease-in-out infinite;
-    pointer-events: none;      /* no molesta al hacer clic en nada */
+    pointer-events: none;
+
+    /* Difuminado de bordes */
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
 }
+
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
@@ -186,6 +191,3 @@ p {
     75%  { transform: translate(-8px, 15px) scale(1.03); }
     100% { transform: translate(0, 0) scale(1); }
 }
-
-
-
