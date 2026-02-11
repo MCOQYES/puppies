@@ -174,18 +174,18 @@ p {
     bottom: 20px;
     right: 20px;
     width: 200px;
-    opacity: 0.75;             
+    opacity: 0.70;             
     animation: floaty 14s ease-in-out infinite;
     pointer-events: none;
 
     /* Fade tipo nube EXTREMO */
     mask-image: radial-gradient(
-        ellipse 120% 110% at center,
+        ellipse 120% 120% at center,
         rgba(0,0,0,1) 25%,
         rgba(0,0,0,0) 100%
     );
     -webkit-mask-image: radial-gradient(
-        ellipse 120% 110% at center,
+        ellipse 120% 120% at center,
         rgba(0,0,0,1) 25%,
         rgba(0,0,0,0) 100%
     );
