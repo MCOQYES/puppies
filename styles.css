@@ -169,3 +169,22 @@ p {
     100% { text-shadow: 0 0 0px rgba(255,0,0,0.4); }
 }
 
+.floating-dream {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 180px; /* ajustable */
+    z-index: 10;
+    animation: floaty 12s ease-in-out infinite;
+    opacity: 0.95; /* suave, no agresivo */
+}
+
+@keyframes floaty {
+    0%   { transform: translate(0, 0) scale(1); }
+    25%  { transform: translate(-10px, -20px) scale(1.03); }
+    50%  { transform: translate(-20px, 0) scale(1); }
+    75%  { transform: translate(-10px, 20px) scale(1.03); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+
