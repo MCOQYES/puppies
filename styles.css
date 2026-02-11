@@ -177,19 +177,18 @@ p {
     pointer-events: none;
     animation: floaty 14s ease-in-out infinite;
 
-    /* Fade elíptico visible y seguro */
+    /* Fade elíptico más pequeño y visible */
     -webkit-mask-image: radial-gradient(
-        ellipse 80% 70% at center,
-        black 60%,
+        ellipse 60% 50% at center,
+        black 55%,
         transparent 100%
     );
     mask-image: radial-gradient(
-        ellipse 80% 70% at center,
-        black 60%,
+        ellipse 60% 50% at center,
+        black 55%,
         transparent 100%
     );
 }
-
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
