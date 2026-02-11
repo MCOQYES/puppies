@@ -169,28 +169,27 @@ p {
     100% { text-shadow: 0 0 0px rgba(255,0,0,0.4); }
 }
 
-
 .floating-dream {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 200px;
-    opacity: 0.85;
-    animation: floaty 14s ease-in-out infinite;
     pointer-events: none;
+    animation: floaty 14s ease-in-out infinite;
 
-    /* Fade elíptico suave */
-    mask-image: radial-gradient(
-        ellipse 130% 110% at center,
-        rgba(0,0,0,1) 40%,
-        rgba(0,0,0,0) 100%
-    );
+    /* Fade elíptico visible y seguro */
     -webkit-mask-image: radial-gradient(
-        ellipse 130% 110% at center,
-        rgba(0,0,0,1) 40%,
-        rgba(0,0,0,0) 100%
+        ellipse 80% 70% at center,
+        black 60%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        ellipse 80% 70% at center,
+        black 60%,
+        transparent 100%
     );
 }
+
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
