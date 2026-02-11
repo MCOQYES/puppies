@@ -169,6 +169,7 @@ p {
     100% { text-shadow: 0 0 0px rgba(255,0,0,0.4); }
 }
 
+
 .floating-dream {
     position: fixed;
     bottom: 20px;
@@ -178,18 +179,18 @@ p {
     animation: floaty 14s ease-in-out infinite;
     pointer-events: none;
 
-    mask-image: url('assets/nube-mask.png');
-    mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    -webkit-mask-image: url('assets/nube-mask.png');
-    -webkit-mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
+    /* Fade elíptico suave */
+    mask-image: radial-gradient(
+        ellipse 130% 110% at center,
+        rgba(0,0,0,1) 40%,
+        rgba(0,0,0,0) 100%
+    );
+    -webkit-mask-image: radial-gradient(
+        ellipse 130% 110% at center,
+        rgba(0,0,0,1) 40%,
+        rgba(0,0,0,0) 100%
+    );
 }
-
-
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
