@@ -170,26 +170,24 @@ p {
 }
 
 .floating-dream {
-    position: fixed;           
+    position: fixed;
     bottom: 20px;
     right: 20px;
     width: 200px;
-    opacity: 0.70;             
+    opacity: 0.80;
     animation: floaty 14s ease-in-out infinite;
     pointer-events: none;
 
-    /* Fade tipo nube EXTREMO */
-    mask-image: radial-gradient(
-        ellipse 120% 120% at center,
-        rgba(0,0,0,1) 25%,
-        rgba(0,0,0,0) 100%
-    );
-    -webkit-mask-image: radial-gradient(
-        ellipse 120% 120% at center,
-        rgba(0,0,0,1) 25%,
-        rgba(0,0,0,0) 100%
-    );
+    /* Máscara con forma de nube (tu imagen) */
+    mask-image: url('assets/nube-mask.png');
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-image: url('assets/nube-mask.png');
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
 }
+
 
 @keyframes floaty {
     0%   { transform: translate(0, 0) scale(1); }
