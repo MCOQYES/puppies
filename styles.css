@@ -144,3 +144,28 @@ p {
     width: 100%;
     opacity: 0.9;
 }
+
+.valentine {
+    color: red;
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation: heartbeat 1.4s ease-in-out infinite,
+               glow 2.5s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    0%   { transform: scale(1); }
+    20%  { transform: scale(1.12); }
+    40%  { transform: scale(1); }
+    60%  { transform: scale(1.12); }
+    80%  { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes glow {
+    0%   { text-shadow: 0 0 0px rgba(255,0,0,0.4); }
+    50%  { text-shadow: 0 0 12px rgba(255,0,0,0.8); }
+    100% { text-shadow: 0 0 0px rgba(255,0,0,0.4); }
+}
+
